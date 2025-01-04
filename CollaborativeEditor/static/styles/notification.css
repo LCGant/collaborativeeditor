@@ -1,0 +1,33 @@
+/* static/styles/notification.css */
+
+/* Exemplo de como estilizar o ícone e balão de notificação */
+.notificationIcon {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 32px;
+    cursor: pointer;
+    display: none; /* só aparece quando notificação está ativa */
+  }
+  
+  .notification-balloon {
+    position: absolute;
+    top: 20px;
+    right: 60px;
+    background: #333;
+    color: #fff;
+    padding: 10px;
+    border-radius: 8px;
+    display: none;
+  }
+  
+  .notification-balloon::after {
+    content: "";
+    position: absolute;
+    top: 10px;
+    right: -8px;
+    border-width: 8px;
+    border-style: solid;
+    border-color: transparent transparent transparent #333;
+  }
+  

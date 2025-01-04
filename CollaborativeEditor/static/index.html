@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="stylesheet" href="/static/styles/index.css">
+  <link rel="stylesheet" href="/static/styles/notification.css">
+  <link rel="icon" href="/static/images/icon.ico" type="image/x-icon">
+  <title>Collaborative Editor - Home</title>
+</head>
+<body>
+
+  <!-- Ícone de notificação (exemplo) -->
+  <img 
+    id="notificationIcon" 
+    class="notificationIcon" 
+    src="/static/images/icon.ico" 
+    alt="Notification Icon" 
+    onclick="toggleNotification()"
+  >
+  <div id="notificationBalloon" class="notification-balloon">
+    <span id="notificationMessage" style="margin: 0;"></span>
+  </div>
+
+  <header>
+    <div class="header-title">
+      <h1>Collaborative Editor</h1>
+    </div>
+  </header>
+  
+  <main>
+    <section class="subdomain-selection">
+      <h2>Choose or Enter a Subdomain</h2>
+      <p>Select or create a subdomain for your collaborative editor session:</p>
+      <input type="text" id="subdomain" placeholder="Enter subdomain here..." />
+      <br/>
+      <button class="button" id="goToEditor">Go to Editor</button>
+    </section>
+  </main>
+  
+  <footer>
+    <p>&copy; 2025 <a href="https://github.com/LCGant" target="_blank">LCGant</a>.</p>
+  </footer>
+
+  <script src="/static/js/index.js"></script>
+
+</body>
+</html>
